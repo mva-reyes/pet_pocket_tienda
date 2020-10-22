@@ -1,16 +1,16 @@
 /*-- variables colores --*/
 :root {
-    --primary: #111b54;
-    --light: #ffffff;
-    --grey: #efefef;
-    --dark: #000000;
-    --navyblue: #0C4C8A;
+  --primary: #111b54;
+  --light: #ffffff;
+  --grey: #efefef;
+  --dark: #000000;
+  --navyblue: #0C4C8A;
 }
 
 body {
-    font-family: 'Spartan', sans-serif;     /*-- Fuente --*/
-    font-weight: 300px;
-    color: var(--primary);
+  font-family: 'Spartan', sans-serif;     /*-- Fuente --*/
+  font-weight: 300px;
+  color: var(--primary);
 }
 
 .bg-dark { background-color: var(--dark) !important; }
