@@ -27,20 +27,20 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
       <img src="img/logo.png" alt="" class="logo p-2">
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler txt-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="icon ion-md-menu"></i></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link txt-light" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link txt-light" href="#">Quienes Somos</a>
+              <a class="nav-link txt-light" href="tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold txt-light" href="#">Tienda</a>
+              <a class="nav-link txt-light" href="#">Cerrar sesión</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link txt-light" href="#">Inicio Sesión</a>
+            <li>
+              <a class="nav-link txt-light" href="carrito.html"><i class="icon ion-md-cart"></i></a>
             </li>
           </ul>
             <form class="form-inline position-relative d-inline-block p-3">
@@ -61,9 +61,10 @@
         </div>
     </div>
   </nav>
-<!-- Registro-->
+  
+ <!-- Registro-->
   <section>
-    <div class="container my-3">
+    <div class="container mt-5 mb-4">
       <div class="row">
       <div class="col">
         <label>¿Ya eres cliente?<a href="" class="acceder">Haz Clic aqui para acceder</a></label>
@@ -107,7 +108,7 @@
                 <input type="text" class="form-control">
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-3">
               <label for="formGroupExampleInput">Dirección<label style="color: red;">*</label></label>
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="calle principal">
               <input type="text" class="form-control mt-2" id="formGroupExampleInput" placeholder="calle secundaria">
@@ -140,75 +141,77 @@
        </div>
      </div>
    </section>
-<!-- Tu pedido-->
-<section>
-  <div class="container my-3">
-    <div class="row">
-    <div class="col">
-      <h3>Tu pedido</h3>
-    </div>
-    </div>
-  </div>
-</section>
-<!-- Producto-->
-<section>
-    <div class="container border st-facturacion">
+
+  <!-- Tu pedido-->
+  <section>
+    <div class="container mt-5">
       <div class="row">
-        <div class="col">
-          <table class="table table-borderless">
-            <thead class="thead-light">
-              <tr>
-                <th scope="row" class="txt-green thead-light">Producto</th>
-                <th></th>
-                <th>Subtotal</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="txt-green">Cepillo de dientes para perros</th>
-                <td id="subtotal2"></td>
-                <td>$<label id="precio">1.50</label></td>
-              </tr>
-              <tr>
-                <th scope="row" class="txt-green">Cantidad</th>
-                <td id="subtotal2"></td>
-                <td ><input id="cantidad" type="number" min="1" max="100" onclick="producto_cantidad()"></td>
-              </tr>
-              <tr>
-                <th scope="row" class="txt-green">Total</th>
+      <div class="col">
+        <h3>Tu pedido</h3>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- Producto-->
+  <section>
+      <div class="container border st-facturacion">
+        <div class="row">
+          <div class="col">
+            <table class="table table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="row" class="txt-green thead-light">Producto</th>
+                  <th></th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="txt-green">Cepillo de dientes para perros</th>
                   <td id="subtotal2"></td>
-                  <td><label id="total"></label></td>
-              </tr>
-            </tbody>
-          </table>
+                  <td>$<label id="precio">1.50</label></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="txt-green">Cantidad</th>
+                  <td id="subtotal2"></td>
+                  <td ><input id="cantidad" type="number" min="1" max="100" onclick="producto_cantidad()"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="txt-green">Total</th>
+                    <td id="subtotal2"></td>
+                    <td><label id="total"></label></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Formas de pago -->
+  <section>
+  <div class="container bg-grey st-facturacion">
+    <div class="row">
+      <div class="col">
+        <div class="form-check">
+          <label><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Transacción directa</label>
+        </div>
+        <div class="form-check">
+          <label><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Pago con tarjeta de crédito / débito</label>
+          <img src="img/formasPago/masterCard.png" alt="">
+          <img src="img/formasPago/visa.png" alt="">
+          <img src="img/formasPago/dinersClub.png" alt="">
+          <img src="img/formasPago/discover.png" alt="">
         </div>
       </div>
     </div>
-</section>
-<!-- Formas de pago -->
-<section>
-<div class="container bg-grey st-facturacion">
-  <div class="row">
-    <div class="col">
-      <div class="form-check">
-        <label><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Transacción directa</label>
-      </div>
-      <div class="form-check">
-        <label><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Pago con tarjeta de crédito / débito</label>
-        <img src="img/formasPago/masterCard.png" alt="">
-        <img src="img/formasPago/visa.png" alt="">
-        <img src="img/formasPago/dinersClub.png" alt="">
-        <img src="img/formasPago/discover.png" alt="">
-      </div>
+    <hr>
+    <p class="blockquote-footer text-muted" style="color: #000 !important;"> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos en nuestras política de privacidad</p>
+    <div class="col-md-4 offset-sm-2 offset-md-8 offset-lg-10">
+        <button type="button" class="btn btn-secondary my-4">Realizar Pedido</button>
     </div>
   </div>
-  <hr>
-  <p class="blockquote-footer text-muted" style="color: #000 !important;"> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos en nuestras política de privacidad</p>
-  <div class="col-md-4 offset-sm-2 offset-md-8 offset-lg-10">
-      <button type="button" class="btn btn-secondary my-4">Realizar Pedido</button>
-  </div>
-</div>
-</section>
+  </section>
   <!-- Footer -->
   <footer class="page-footer font-small unique-color-dark pt-4 bg-dark">
     <div class="container">

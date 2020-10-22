@@ -76,6 +76,10 @@ body {
   margin-right: .5rem;
 }
 
+.btnCarrito:hover {
+  color: #fff !important;
+}
+
 .icono-producto {
   font-size: 30px;
   color:var(--dark) !important;
@@ -95,13 +99,17 @@ textarea {
   font-size: 35px;
 }
 
-.card-body a{
+.product-share a{
   text-decoration: none;
   color: var(--navyblue);
 }
 
-.card-body a:hover{
+.product-share a:hover{
   color: #00BAA1 !important;
+}
+
+.btnCarrito:hover {
+  color: var(--light)!important;
 }
 
 /*--------------------- Footer ---------------------*/

@@ -27,20 +27,20 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
       <img src="img/logo.png" alt="" class="logo p-2">
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler txt-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="icon ion-md-menu"></i></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link txt-light" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link txt-light" href="#">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link txt-light" href="tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link txt-light" href="#">Inicio Sesión</a>
+              <a class="nav-link txt-light" href="#">Cerrar sesión</a>
+            </li>
+            <li>
+              <a class="nav-link txt-light font-weight-bold" href="#"><i class="icon ion-md-cart"></i></a>
             </li>
           </ul>
             <form class="form-inline position-relative d-inline-block p-3">
@@ -120,7 +120,7 @@
     </div> 
     <hr class="linea">
   </section>
-  <div class="container">
+  <div class="container mt-5">
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-outline-success" onclick="productoCarrito()">Actualizar carrito</button>
@@ -131,7 +131,7 @@
   <!-- Tabla total carrito -->
   <div class="container">
     <div id="galeria" class="txt-dark my-5"> 
-      <div class="row text-left">
+      <div class="row text-center">
         <div class="col">
           <div class="offset-md-3 col-6 offset-sm-3">
             <h2 id="noticias" class="txt_total">Total del carrito</h2>
@@ -154,7 +154,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 offset-sm-2 offset-md-8 offset-lg-9">
-          <button type="button" class="btn btn-secondary my-4">Finalizar compra</button>
+          <a href="facturacion.html" class="txt-light text-decoration-none"><button type="button" class="btn btn-secondary my-4"> Finalizar compra </a></button></a>
         </div>
       </div>
     </div>
